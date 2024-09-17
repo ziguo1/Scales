@@ -96,8 +96,8 @@ void draw() {
   
   pushMatrix();
   float lerpFactor = 0.1, snapFactor = 0.3;
-  targetXOff = clamp(-(mouseX * 0.2), 30);
-  targetYOff = clamp(-(mouseY * 0.2), 30);
+  targetXOff = clamp(-(mouseX * 0.5), 60);
+  targetYOff = clamp(-(mouseY * 0.5), 60);
   
   //if (Math.abs(lerp(cameraXOff, targetXOff, lerpFactor) - cameraXOff) < snapFactor && Math.abs(lerp(cameraYOff, targetYOff, lerpFactor) - cameraYOff) < snapFactor) {
   //  targetXOff = (int) ((Math.random() * 10) * (Math.random() > 0.5 ? -1 : 1));
